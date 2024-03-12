@@ -1,0 +1,28 @@
+<p>
+    Equipo: {{ nombre }}
+  </p>
+  <mat-divider></mat-divider>
+  
+  <h2>Jugadores</h2>
+  
+  <cdk-accordion class="custom-lilac">
+    <mat-expansion-panel hideToggle="true"  class="custom-pink">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ jugador }}
+        </mat-panel-title>
+        <mat-panel-description>
+          Delantero 
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <p>Estado: {{ estatus }}</p>
+  
+    </mat-expansion-panel>
+  </cdk-accordion>
+  
+  
+  <mat-divider></mat-divider>
+  <app-jugador [nombre]="jugador" [equipo]="nombre" (onActivate)="actualizarEstado($event)"></app-jugador>
+  
