@@ -20,9 +20,25 @@
       <p>Estado: {{ estatus }}</p>
   
     </mat-expansion-panel>
+
+    <mat-expansion-panel hideToggle="true"  class="custom-pink">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Luis
+        </mat-panel-title>
+        <mat-panel-description>
+          Medio centro
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <p>Estado: {{ estatus }}</p>
+  
+    </mat-expansion-panel>
   </cdk-accordion>
   
   
   <mat-divider></mat-divider>
   <app-jugador [nombre]="jugador" [equipo]="nombre" (onActivate)="actualizarEstado($event)"></app-jugador>
+  <app-jugador nombre="Luis" equipo="B" (onActivate)="actualizarEstado($event)"></app-jugador>
   

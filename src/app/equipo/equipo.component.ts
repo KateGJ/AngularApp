@@ -34,6 +34,10 @@ export class EquipoComponent implements OnInit {
   }
 
   actualizarEstado(event: boolean) {
-    this.estatus = event;
+    if(this.estatus == true){
+      this.estatus = false;
+    }else{
+      this.estatus = true;
+    }
   }
 }

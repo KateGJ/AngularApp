@@ -1,12 +1,16 @@
 <mat-card class="jugador-card">
-    <mat-card-header>
-      <div mat-card-avatar class="jugador-header-image"></div>
-      <mat-card-title>{{ jugador }}</mat-card-title>
-      <mat-card-subtitle>{{ equipo }}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="http://via.placeholder.com/200x200?text=Foto+de+jugador">
-  
-    <mat-card-actions>
-      <button mat-button color="primary" (click)='activarJugador()'>Activar</button>
-    </mat-card-actions>
-  </mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="jugador-header-image"></div>
+    <mat-card-title>{{ jugador }}</mat-card-title>
+    <mat-card-subtitle>{{ equipo }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://tmssl.akamaized.net/images/foto/galerie/carlos-alcaraz-juventus-2023-24-1707150047-128578.jpg?lm=1707150075r">
+  <mat-card-content>
+    <p>
+      This is the information of {{ jugador }}, who is actually playing in {{ equipo }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary" (click)='activarJugador()'>Activar</button>
+  </mat-card-actions>
+</mat-card>
